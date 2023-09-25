@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className=" flex justify-center items-center h-[400px]">
+        <div className=" flex justify-center items-center lg:h-[300px] ">
             <div>
                 <h1 className="font-bold text-4xl">I Grow By Helping People In Need</h1>
                 <div className="relative mt-10">
@@ -9,6 +9,7 @@ const Banner = () => {
                     <button className="btn bg-[#FF444A] text-white absolute top-0 right-0 rounded-l-none lowercase  ">Search</button>
                 </div>
             </div>
+
         </div>
     );
 };
