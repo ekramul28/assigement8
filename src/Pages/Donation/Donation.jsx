@@ -21,6 +21,7 @@ const Donation = () => {
         <div className="grid lg:grid-cols-2 gap-3">
             {
                 donation?.map(donar => <Donar key={donar.id} donar={donar}></Donar>)
+
             }
         </div>
     );
