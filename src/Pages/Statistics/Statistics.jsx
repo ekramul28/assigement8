@@ -1,8 +1,9 @@
+import React from 'react';
 
 const Statistics = () => {
     return (
         <div>
-            statistics
+            <h1>ok</h1>
         </div>
     );
 };

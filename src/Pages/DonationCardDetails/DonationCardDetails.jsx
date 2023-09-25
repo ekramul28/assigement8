@@ -27,14 +27,14 @@ const DonationCardDetails = () => {
     }, [id, Details])
     return (
         <div>
-            <div>
+            <div className="relative">
                 <img className="w-full" src={img} alt="" />
-                <div className="h-32 bg-[#0B0B0B80]  flex items-center ">
+                <div className="h-32 w-full bg-[#0B0B0B80]  flex items-center absolute bottom-0   ">
                     <button onClick={handelDonateBtn} className="btn border-none text-white ml-7 " style={{ backgroundColor: text_color }}>Donate {Donate}</button>
                 </div>
             </div>
-            <p className="text-5xl font-bold">{description}</p>
-            <p className="mt-2">{details_of}</p>
+            <p className="text-5xl font-bold mt-10">{description}</p>
+            <p className="mt-4 font-normal">{details_of}</p>
         </div>
 
     );

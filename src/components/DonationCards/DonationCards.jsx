@@ -7,7 +7,8 @@ const DonationCards = () => {
     return (
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-2">
 
-            {cards?.map(card => <Card card={card} key={card.id}></Card>)}
+            {
+                Array.isArray(cards) ? cards.map(card => <Card card={card} key={card.id}></Card>) : null}
 
 
 
