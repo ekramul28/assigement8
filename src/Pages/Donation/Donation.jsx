@@ -1,10 +1,10 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getItemOfLocalStor } from "../../utility/LocalStroage";
 import { useEffect, useState } from "react";
 import Donar from "../../components/donar/Donar";
 
 const Donation = () => {
-    const [donation, setDonation] = useState({});
+    const [donation, setDonation] = useState([]);
     const [isClick, setIsClick] = useState(4);
     console.log(isClick)
     const allDonation = useLoaderData();
